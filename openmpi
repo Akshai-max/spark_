@@ -1,0 +1,12 @@
+# ----- MPI Commands -----
+sudo apt install python3
+sudo apt install -y -qq mpich
+sudo apt install python3-pip
+pip install mpi4py
+mpirun -np 4 python3 mpi_example.py
+
+# ----- OpenMP Commands -----
+sudo apt-get install libomp-dev
+sudo apt install gcc
+gcc -fopenmp program.c -o program
+./program
