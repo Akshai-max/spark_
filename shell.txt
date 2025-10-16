@@ -1,0 +1,3 @@
+val text = sc.textFile("input.txt")
+val counts = text.flatMap(_.split("\\s+")).map((_, 1)).reduceByKey(_ + _)
+counts.collect().foreach(println)
