@@ -9,3 +9,5 @@ spark-submit --class WordCount wordcount.jar
 
 spark-shell
 :load spark.scala
+WordCount.main(Array())
+
