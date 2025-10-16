@@ -6,3 +6,6 @@ counts.collect().foreach(println)
 scalac -classpath "$(echo $SPARK_HOME/jars/*.jar | tr ' ' ':')" WordCount.scala
 jar cf wordcount.jar WordCount*.class
 spark-submit --class WordCount wordcount.jar
+
+spark-shell
+:load spark.scala
